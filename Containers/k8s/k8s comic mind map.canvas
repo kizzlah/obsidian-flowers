@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"b96c97952820757f","type":"text","text":"Microservices \nBy instead converting them into individual processes, however, things became easier to control. These smaller units monolithic services are known as \"microservices\", which can be debugged, updated, and deployed individually without causing the entire infrastructure to go dark.","x":-662,"y":-180,"width":485,"height":260},
+		{"id":"792a0c1f6c29d15a","type":"text","text":"Preserve the network of dependencies","x":40,"y":0,"width":312,"height":50},
+		{"id":"85f5812937174a33","type":"text","text":"Loosely coupled w/a lightweight protocol ","x":47,"y":-180,"width":305,"height":60},
+		{"id":"a0b8973530657c15","type":"text","text":"If all micros are on a single OS, conflicts can occur b/t library versions and applicaiton components. \n\nIf on a VM, apps could still conflict with eac other.\n\nIf on separate VMs, it's too heavy, wasteful, and expensive.","x":600,"y":-240,"width":320,"height":380},
+		{"id":"4b3ec080ed3bff83","type":"text","text":"# Monolithic Applications\nMonolithic applications were once the go to for containerization. They had impressive feature sets, but too many interdependent parts, resulting in a nightmare for integration and deployment. ","x":-457,"y":-640,"width":560,"height":200},
+		{"id":"314e9194759ecdf8","type":"text","text":"SOLUTION\n\nSelf-containment - each process built to run on it sown with its libraries and settings established within, or, everything each process needs to run on any machine.","x":-419,"y":320,"width":434,"height":200},
+		{"id":"88359fcbbeb0e1cd","type":"text","text":"The ideas behind containers and microservices:\n\nModularity + Interoperability =\n\nNew levels of portability, reproducibility, and scalability. ","x":-602,"y":620,"width":800,"height":141}
+	],
+	"edges":[
+		{"id":"ee5a4baa1dd03bdb","fromNode":"b96c97952820757f","fromSide":"top","toNode":"4b3ec080ed3bff83","toSide":"bottom"},
+		{"id":"cf5ca6e9ed2af7ed","fromNode":"4b3ec080ed3bff83","fromSide":"bottom","toNode":"b96c97952820757f","toSide":"top"},
+		{"id":"bf262f70965e8f4c","fromNode":"b96c97952820757f","fromSide":"right","toNode":"85f5812937174a33","toSide":"left"},
+		{"id":"1e4cfe4c9572a108","fromNode":"b96c97952820757f","fromSide":"right","toNode":"792a0c1f6c29d15a","toSide":"left"},
+		{"id":"cc5f7edae58a44a0","fromNode":"85f5812937174a33","fromSide":"right","toNode":"a0b8973530657c15","toSide":"left"},
+		{"id":"c7ee70bd9359a749","fromNode":"792a0c1f6c29d15a","fromSide":"right","toNode":"a0b8973530657c15","toSide":"left"},
+		{"id":"051c2f9edd1c8221","fromNode":"b96c97952820757f","fromSide":"bottom","toNode":"314e9194759ecdf8","toSide":"top"},
+		{"id":"1e776e2a1c58ee15","fromNode":"88359fcbbeb0e1cd","fromSide":"top","toNode":"314e9194759ecdf8","toSide":"bottom"},
+		{"id":"c0e106323b17be3c","fromNode":"314e9194759ecdf8","fromSide":"bottom","toNode":"88359fcbbeb0e1cd","toSide":"top"},
+		{"id":"7acfe85c64e069ad","fromNode":"314e9194759ecdf8","fromSide":"top","toNode":"b96c97952820757f","toSide":"bottom"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
